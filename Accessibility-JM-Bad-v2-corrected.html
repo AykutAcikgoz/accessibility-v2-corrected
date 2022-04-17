@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Accessible HTML</title>
+</head>
+
+<body style="background-color: white;">
+        <section>
+            <h1>Welcome to My Favourite Colour</h1>
+            <p>This is a simple HTML web page where you will be able to vote for your favourite colour. What makes this simple page special is that it is developed with accessibility in mind.</p>
+            <p>Read the following articles to <a href="https://www.w3.org/standards/webdesign/accessibility"
+                target="_blank">learn more about the meaning</a> and <a href="https://www.usability.gov/what-and-why/accessibility.html"
+                target="_blank">basics of accessibility.</a>
+            </p>
+            <div>
+                <img src="colour-emotion.jpg" alt="colours of emotion">
+                <p>Image source: Colour Psychology - London Image Institute (2020) (Adapted)</p>
+            </div>
+        </section>
+
+        <img src="line.gif" alt="line">
+
+        <section>
+            <h2>Vote for your favourite colour!</h2>
+            <p>Please fill in the form below and press the 'Submit' button to vote for your favourite colour! The rules are the following:</p>
+            <ul>
+                <li>You can only vote once.</li>
+                <li>You can only use the form below to vote.</li>
+            </ul>
+            <h3>Vote</h3>
+            <form action="">
+                <div style="display:flex; flex-direction:row;">
+                    <label for="name" style="margin-right: 10px; margin-left: 15px;"><strong>Name:</strong></label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <br>
+                <fieldset>
+                    <legend><strong>Color:</strong></legend>
+                    <input type="radio" id="red" name="fav_color" value="Red">
+                    <label for="red">Red</label><br>
+                    <input type="radio" id="blue" name="fav_color" value="Blue">
+                    <label for="blue">Blue</label><br>
+                    <input type="radio" id="orange" name="fav_color" value="Orange">
+                    <label for="orange">Orange</label><br>
+                    <input type="radio" id="green" name="fav_color" value="Green">
+                    <label for="green">Green</label>
+                </fieldset>
+                <br>
+                <button type="button" style="margin-left: 15px;">Submit</button>
+            </form>
+        </section>
+  
+        <footer>
+            <p>Copyright 2022 - My Favourite Colour. To learn more about Accessibility, please call us on this number <img src="phone.jpg" alt="phone number"></p>
+        </footer>
+</body>
+
+</html>
